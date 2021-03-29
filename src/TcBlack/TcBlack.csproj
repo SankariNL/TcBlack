@@ -61,6 +61,7 @@
     <Compile Include="MessageFilter.cs" />
     <Compile Include="ObjectDefinition.cs" />
     <Compile Include="ICodeLineOperations.cs" />
+    <Compile Include="Pragma.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CodeLineBase.cs" />

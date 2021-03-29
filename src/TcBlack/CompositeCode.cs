@@ -85,6 +85,10 @@ namespace TcBlack
                     TryRemoveLastEmptyLine();
                     Add(new VariableBlockStart(unformattedCode: line));
                 }
+                else if (line.StartsWith("{"))
+				{
+                    Add(new Pragma(unformattedCode: line));
+				}
                 else if (
                     line.StartsWith("FUNCTION") 
                     || line.StartsWith("METHOD") 
