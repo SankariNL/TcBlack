@@ -7,9 +7,9 @@ namespace TcBlackTests
     public class PragmaTests
 	{
         [Theory]
-        [InlineData("       {text 'This is text'}", 0, "{text 'This is text'}", 1)]
+        [InlineData("       {text 'This is text'}", 0, "{text 'This is text'}", 0)]
         [InlineData("   {attribute 'qualified_only'}      ",
-            1, "    {attribute 'qualified_only'}", 2)]
+            2, "        {attribute 'qualified_only'}", 2)]
         public void DifferentIndents(
             string originalCode,
             uint indents,
