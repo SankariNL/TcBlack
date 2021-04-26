@@ -94,8 +94,7 @@ namespace TcBlackCore
                     Add(new ObjectDefinition(unformattedCode: line));
                 }
                 else if (line.StartsWith("{"))
-                {
-                    TryRemoveLastEmptyLine();
+                {                      
                     Add(new Pragma(unformattedCode: line));
                 }
                 else if (LooksLikeVariableDeclaration(line))

@@ -23,5 +23,21 @@ namespace TcBlackTests
             Assert.Equal(expectedCode, var.Format(ref indents));
             Assert.Equal(expectedIndents, indents);
         }
+
+        [Theory]
+        [InlineData("{text  'This is text'}", "{text 'This is text'}")]
+        [InlineData("{attribute    'qualified_only'  }", "{attribute 'qualified_only'}")]
+        public void RemoveDoubleSpaces(
+            string originalCode,
+            string expectedCode
+        )
+        {
+            Global.indentation = "    ";
+            Global.lineEnding = "\n";
+
+            Pragma var = new Pragma(originalCode);
+            uint indents = 0;
+            Assert.Equal(expectedCode, var.Format(ref indents));
+        }
     }
 }
