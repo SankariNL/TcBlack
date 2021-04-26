@@ -67,7 +67,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TCatSysManagerLib.dll" />
     <VSCTCompile Include="FormatStructuredTextPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
