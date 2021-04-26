@@ -54,6 +54,7 @@
     <Compile Include="ICodeLineOperations.cs" />
     <Compile Include="Keywords.cs" />
     <Compile Include="ObjectDefinition.cs" />
+    <Compile Include="Pragma.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnknownCodeType.cs" />
     <Compile Include="VariableBlockEnd.cs" />
